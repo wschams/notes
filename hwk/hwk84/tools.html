@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* p {
+            font-size: 20px;
+        } */
+    </style>
+</head>
+
+<body>
+    <p id="someHtml">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dignissimos quaerat beatae repellat ipsam, numquam labore
+        illum, tempore est ex earum atque esse deserunt hic?</p>
+    <button id="button1">Button 1</button>
+    <!-- <button id="button2">Button 2</button> -->
+    <p id="data">qqqqqqqqqqqq</p>
+    <script src="tools.js"></script>
+    <script>
+        var someHtml = pcs("someHtml")
+            .hide();
+        pcs("button1")
+            .clickHandler(function () {
+                someHtml.show().pulsate();
+            });
+        var count = 0;
+        var data = pcs("data")
+            .clickHandler(function () {
+                data.setData('counter', ++count);
+                console.log(data.getData('counter'));
+            });
+    </script>
+</body>
+
+</html>

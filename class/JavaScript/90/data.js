@@ -1,0 +1,1 @@
+foo({ "firstName": "Donald", "LastName": "Trump", "Age": 70 });

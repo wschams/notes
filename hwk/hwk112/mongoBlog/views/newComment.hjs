@@ -1,0 +1,4 @@
+<form method="post" id="newComment">
+    <label>Content <textarea name="content" placeholder="Enter post content"></textarea></label>
+    <button>Submit</button>
+</form>

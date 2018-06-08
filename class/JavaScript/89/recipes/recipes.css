@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+#recipe {
+    display: none;
+}
+
+#recipe ul {
+    padding: 0;
+    list-style: none;
+}
+
+#recipe img {
+    width: 730px;
+    height: 549px;
+}

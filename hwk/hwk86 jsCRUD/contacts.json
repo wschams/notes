@@ -1,0 +1,20 @@
+[
+    {
+        "firstName": "Donald",
+        "lastName": "Trump",
+        "email": "thedonald@whitehouse.gov",
+        "phone": "1234567890"
+    },
+    {
+        "firstName": "Ivanka",
+        "lastName": "Trump",
+        "email": "thedonald@whitehouse.gov",
+        "phone": "1234567890"
+    },
+    {
+        "firstName": "D",
+        "lastName": "Trump",
+        "email": "thedonald@whitehouse.gov",
+        "phone": "1234567890"
+    }
+]

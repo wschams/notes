@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="someHtml">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dignissimos quaerat beatae repellat ipsam, numquam labore
+        illum, tempore est ex earum atque esse deserunt hic?</p>
+    <button id="myButton">Button</button>
+    <script src="tools.js"></script>
+    <script>
+        var someHtml = pcs.tools.wrap("someHtml")
+            .hide();
+        pcs.tools.wrap("myButton")
+            .clickHandler(function () {
+                someHtml.show().pulsate();
+            });
+    </script>
+</body>
+
+</html>

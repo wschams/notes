@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .amazingButton {
+            cursor: pointer;
+            color: red;
+            background: none;
+            border: none;
+            height: 138px;
+            width: 300px;
+            font-size: 37px;
+            font-weight: bold;
+            background-image: url(poster.png);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form action="processOrder.php" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>First Name <input type="text" name="firstName" value="Donald" readonly/></label>
+            <label for="lastName">Last Name</label> <input type="text" id="lastName" name="lastName" value="Trump" required/>
+            <label>Password <input type="password" name="password" minlength="5" maxlength="10" placeholder="Enter Password"/></label>
+            <label>Email <input type="email" name="email"/></label>
+            <label>Age <input type="number" name="number" step=".1" min="0" max="120"/></label>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label>Favorite Color <input type="color" name="favoriteColor"/></label>
+            <label>Birthdate <input type="date" name="birthday"/></label>
+            <label>Month <input type="month" name="month" disabled/></label>
+            <label>Telephone <input type="tel" name="telephone"/></label>
+            
+            <label>Rate Us! <input type="range" name="rating" min="0" max="5"/></label>
+
+
+            <label>Comments <textarea name="comments">Initial text</textarea></label>
+            <input type="hidden" name="secret" value="secretStuff"/>
+
+            <label>
+                Do you think Donald Trump is doing a good job?
+                <input type="radio" name="trumpPoll" value="yes" required checked/>Yes
+                <input type="radio" name="trumpPoll" value="no"/>No
+            </label>
+
+            <label>
+                Sides
+                <input type="checkbox" name="sides" value="fries"/>Fries
+                <input type="checkbox" name="sides" value="onionRings" checked/>Onion Rings
+                <input type="checkbox" name="sides" value="mashedPotatoes"/>Mashed Potatoes
+            </label>
+
+            <select name="dreamCar">
+                <option value="1">Honda</option>
+                <option value="2">Toyota</option>
+                <option value="3">Lamborghini<option>
+            </select>
+        </fieldset>
+        <input class="amazingButton" type="button" value="Click Me!"/>
+        <input type="reset" value="Set form back to initial values"/>
+        <input type="submit" value="Register!"/>
+
+        <button type="button"><img src="poster.png"/>No, Click Me!</button>
+        <button type="reset">No, Click Me to reset</button>
+        <button type="submit">Submit here...</button>
+    </form>
+</body>
+</html>

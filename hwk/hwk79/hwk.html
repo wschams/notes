@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id = "body">
+    <h1>PCS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet inventore reiciendis dolorum, omnis accusamus repudiandae ducimus delectus obcaecati ex cupiditate iste eveniet rem beatae ipsum voluptas ratione repellendus vitae velit excepturi ullam officia vero! Minus totam nam, quos laudantium accusantium perferendis nulla, omnis sequi sunt tempora voluptate temporibus atque.</p>
+            <input id = "colorChooser" type="color">
+                <button id = "fontColor">Choose color and press for font color</button>
+                <button id = "backgroundColor">Choose color and press for background color</button>
+    <script>
+        (function () {
+            window.onload = function () {
+                "use strict";
+                var body = document.getElementById("body");
+                var fontButton = document.getElementById("fontColor");
+                fontButton.addEventListener('click', function() {
+                    var color = document.getElementById("colorChooser").value;
+                    body.style.color = color;
+                });
+                var backgroundColor = document.getElementById("backgroundColor");
+                backgroundColor.addEventListener('click', function() {
+                    var color = document.getElementById("colorChooser").value;
+                    body.style.backgroundColor = color;
+                });
+            }
+        }());     
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        caption {
+            border: 1px solid black;
+            color: rebeccapurple;
+            font-size: 3em;
+            border-top: none;
+            caption-side: bottom;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px 4px;
+        }
+
+        tbody th, tbody td, tfoot th, tfoot td {
+            text-align: right;
+        }
+
+        tfoot td {
+            color: red;
+            font-weight: bold;
+        }
+
+        /*.odd {
+            background-color: lightblue;
+        }*/
+
+        /*tbody tr:nth-child(2n + 1) {
+            background-color: lightblue;
+        }*/
+
+        tbody tr:nth-child(odd) {
+            background-color: lightblue;
+        }
+        
+        tbody tr:hover {
+            background-color: pink;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Donald Trumps tweets per year</h2>
+    <hr/>
+    <table>
+        <caption>Trumps Tweets Per Year</caption>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>January</th>
+                <th>February</th>
+                <th>March</th>
+                <th>April</th>
+                <th>May</th>
+                <th>June</th>
+                <th>July</th>
+                <th>August</th>
+                <th>September</th>
+                <th>October</th>
+                <th>November</th>
+                <th>December</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>2013</th>
+                <td>4</td>
+                <td>6</td>
+                <td>42</td>
+                <td>24</td>
+                <td>34</td>
+                <td>23</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+            </tr>
+            <tr>
+                <th>2014</th>
+                <td>4</td>
+                <td>6</td>
+                <td>42</td>
+                <td>24</td>
+                <td>34</td>
+                <td>23</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+            </tr>
+            <tr>
+                <th>2015</th>
+                <td>4</td>
+                <td>6</td>
+                <td>42</td>
+                <td>24</td>
+                <td>34</td>
+                <td>23</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+            </tr>
+            <tr>
+                <th>2016</th>
+                <td>4</td>
+                <td>6</td>
+                <td>42</td>
+                <td>24</td>
+                <td>34</td>
+                <td>23</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+            </tr>
+            <tr>
+                <th>2017</th>
+                <td>4</td>
+                <td>6</td>
+                <td>42</td>
+                <td>24</td>
+                <td>34</td>
+                <td>23</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>All</th>
+                <td>400</td>
+                <td>60</td>
+                <td>420</td>
+                <td>254</td>
+                <td>334</td>
+                <td>123</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td>NA</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

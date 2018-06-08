@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{#posts}}
+<div class="post" id="{{_id}}">
+    <h2>{{title}}</h2>
+    <h3>by {{author}} at {{date}}</h3>
+    <div>{{content}}</div>
+
+    <div class="comments">
+        <button class="addComment">add comment</button>
+        {{#comments}}
+        <div class="comment">
+            <div>{{content}}</div>
+            <div class="attribution">Posted by {{author}} at {{date}}</div>
+        </div>
+        {{/comments}}
+    </div>
+</div>
+{{/posts}}

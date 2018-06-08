@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <h1>PCS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet inventore reiciendis dolorum, omnis accusamus repudiandae
+        ducimus delectus obcaecati ex cupiditate iste eveniet rem beatae ipsum voluptas ratione repellendus vitae velit excepturi
+        ullam officia vero! Minus totam nam, quos laudantium accusantium perferendis nulla, omnis sequi sunt tempora voluptate
+        temporibus atque.</p>
+    <button id="changeColors">Choose color and press for font color</button>
+    <script>
+        (function () {
+            window.onload = function () {
+                "use strict";
+                var colors = ['red', 'blue', 'green'];
+                var i = 0;
+                var intervalId;
+                var changeColors = document.getElementById("changeColors");
+                var startString = 'Start';
+                var stopString = 'Stop';
+
+                function setColor(c) {
+                    var color = c;
+                    document.body.style.color = color;
+                }
+                function setBackgroundColor(c) {
+                    var color = c;
+                    document.body.style.backgroundColor = color;
+                }
+
+                function changeColor() {
+                    setColor(colors[i]);
+                    i += 1;
+                    setBackgroundColor(colors[i]);
+                    if (i === colors.length) {
+                        i = 0;
+                    }
+                }
+
+                changeColors.innerHTML = startString;
+
+                changeColors.addEventListener('click', function () {
+                    if (changeColors.innerHTML === startString) {
+                        intervalId = setInterval(changeColor, 750);
+                        changeColors.innerHTML = stopString;
+                    } else {
+                        clearInterval(intervalId);
+                        changeColors.innerHTML = startString;
+                    }
+                });
+            }
+        }());      
+    </script>
+</body>
+
+</html>
